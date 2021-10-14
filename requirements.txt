@@ -1,0 +1,3 @@
+requests # for html request
+beautifulsoup4 # soup object, readable html
+wget # download images
