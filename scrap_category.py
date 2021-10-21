@@ -7,7 +7,9 @@ from scrap_book_show import scrap_book_show
 
 
 def scrap_category(url):
-    # Create Category.csv and write headers
+    '''Cree l'entete du csv de la categorie
+    recupere tous les urls de livre de la categorie
+    et applique scrap book show a chacun des urls'''
     en_tete = [
         "product_page_url",
         "universal_product_code",

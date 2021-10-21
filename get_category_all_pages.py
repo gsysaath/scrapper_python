@@ -4,7 +4,10 @@ from bs4 import BeautifulSoup
 
 
 def get_category_all_pages(url):
-    # Landing on category index.html
+    '''Arrive sur index.html de la categorie
+    recupere le nom de categorie
+    retourne une liste de deux elements
+    [le nom de la categorie, liste des urls des pages liees a la categorie'''
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     # Define which category

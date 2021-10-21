@@ -8,6 +8,8 @@ from download_image import download_image
 
 
 def scrap_book_show(url, csv_name):
+    '''Scrap une show d'un book, telecharge l'image
+    et rentre ses donnees dans le csv de sa categorie '''
     page = requests.get(url)
     soup = BeautifulSoup(page.content, 'html.parser')
     all_tds = soup.find_all("td")

@@ -4,7 +4,7 @@ from bs4 import BeautifulSoup
 
 
 def scrap_all_categories():
-
+    ''' Retourne liste de categories '''
     index = "https://books.toscrape.com/catalogue/category/books_1/index.html"
     page = requests.get(index)
     soup = BeautifulSoup(page.content, 'html.parser')
