@@ -36,7 +36,7 @@ Activons le:
 
 - Pour Unix:
 
-    ***python3 -m venv env***
+    ***python3 scrapper.py***
 
 - Pour windows:
 
