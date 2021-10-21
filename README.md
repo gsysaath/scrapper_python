@@ -1,27 +1,43 @@
 # Installation du scrapper books
-## Tout d'abord creer l'environnement virtuel
-
-Lancez dans le terminal la commande qui va vous creer l'envrironnement virtuel appelé env:
-***python3 -m venv env***
-Activons le:
-- Pour Mac os avec bash/zsh:
-
-    ***source ./env/bin/activate***
-- Pour windows cmd.exe:
-
-    ***C:\\{venv}\\Scripts\\activate.bat***
-
-Sinon je vous renvois vers la documentation https://docs.python.org/fr/3.8/library/venv.html
 ## Cloner le repo github en local
 
 Lancer dans le terminal:
 
 ***git clone https://github.com/gsysaath/scrapper_python.git scrapper***
 
-Rentrons dans le dossier tout juste cloné
+Rentrons dans le dossier tout juste cloné:
 
 ***cd scrapper***
+## Tout d'abord creer l'environnement virtuel
 
-Et lancer le scrapping:
+Lancez dans le terminal la commande qui va vous creer l'envrironnement virtuel appelé env:
 
-***python3 scrapper.py***
+- Pour Unix:
+
+    ***python3 -m venv env***
+
+- Pour windows:
+
+    ***python -m venv env***
+    
+Activons le:
+- Pour Unix:
+
+    ***source ./env/bin/activate***
+- Pour Windows:
+
+    ***.env/Scripts/activate.bat***
+
+## Installer les requirements
+
+    pip install -r requirements.txt
+
+## Et lancer le scrapping:
+
+- Pour Unix:
+
+    ***python3 -m venv env***
+
+- Pour windows:
+
+    ***python scrapper.py*** 
