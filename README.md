@@ -10,14 +10,18 @@ Activons le:
 - Pour windows cmd.exe:
 
     ***C:\\{venv}\\Scripts\\activate.bat***
+
 Sinon je vous renvois vers la documentation https://docs.python.org/fr/3.8/library/venv.html
 ## Cloner le repo github en local
 
 Lancer dans le terminal:
+
 ***git clone https://github.com/gsysaath/scrapper_python.git scrapper***
 
-## Rentrons dans le dossier tout juste cloné
+Rentrons dans le dossier tout juste cloné
 
 ***cd scrapper***
+
 Et lancer le scrapping:
+
 ***python3 scrapper.py***
