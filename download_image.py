@@ -1,6 +1,9 @@
 import wget
 
-# Download image to ./images path
-def download_image(image_url, book_title):
-    image_filename = wget.download(image_url, f'./images/{ book_title }.jpg')
+
+def download_image(image_url, universal_product_code):
+    # Download image to ./images path
+
+    img_name = f'./images/{ universal_product_code }.jpg'
+    image_filename = wget.download(image_url, img_name)
     print('Image Successfully Downloaded: ', image_filename)
